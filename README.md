@@ -3,7 +3,7 @@
 ## Prérequis
 
 - ox_lib: https://github.com/overextended/ox_lib
-- esx: https://github.com/ESX-Org/es_extended
+- Framewor ESX Only : https://github.com/esx-framework/esx_core
 
 ## Fonctionnalités
 
