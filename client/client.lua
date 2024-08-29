@@ -41,7 +41,7 @@ local function subMenuSearch(resutlResearch)
 
     for i=1, #resutlResearch do
         local getPlayer = resutlResearch[i]
-        local isOnline = resutlResearch.serverId or nil
+        local isOnline = getPlayer.serverId or nil
         local descOprions = isOnline and "En ligne: ID "..isOnline or "Joueur hors ligne"
 
         table.insert(wipeSearchPlayer, {
@@ -87,7 +87,7 @@ RegisterNetEvent("openWipeMenu", function ()
 
     for i=1, #allRegisteredPlayer do
         local getPlayer = allRegisteredPlayer[i]
-        local isOnline = allRegisteredPlayer[i].serverId or nil
+        local isOnline = getPlayer.serverId or nil
         local descOprions = isOnline and "En ligne: ID "..isOnline or "Joueur hors ligne"
 
         table.insert(wipeOptions, {
